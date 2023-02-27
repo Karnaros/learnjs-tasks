@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <script>
+
+    let base = Number(prompt("Введите основание степени:"));
+    let exponent = Number(prompt("Введите показатель степени:"));
+    alert(calcPow(base, exponent) ?? "Показатель степени должен быть натуральным числом");
+
+    function calcPow(x, n){
+        if(Number.isInteger(n) && (n > 0)){
+            return x ** n;
+        }
+        return;
+    }
+
+  </script>
+
+</body>
+</html>

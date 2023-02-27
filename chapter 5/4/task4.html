@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <script>
+
+    function sumInput() {
+        let input;
+        let resultArr = [];
+        let sum = 0;
+
+        while(true){
+            input = prompt("Введите число:", "");
+
+            if(!Boolean(input)) break;
+            input = Number(input);
+            if(isNaN(input)) break;
+
+            resultArr.push(input);
+            sum += input;
+        }
+
+        return sum;
+    }
+
+    alert(`Сумма введенных чисел = ${sumInput()}`);
+
+  </script>
+
+</body>
+</html>

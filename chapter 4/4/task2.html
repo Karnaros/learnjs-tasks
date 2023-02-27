@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <script>
+    let calculator = {
+        arg1: 0,
+        arg2: 0,
+        read() {
+            this.arg1 = Number( prompt("Введите первый аргумент:", 0) );
+            this.arg2 = Number( prompt("Введите второй аргумент:", 0) ); 
+        },
+        sum() {
+            return (this.arg1 + this.arg2);
+        },
+        mul() {
+            return (this.arg1 * this.arg2);
+        }
+    };
+  
+    calculator.read();
+    alert( `Сумма = ${calculator.sum()}` );
+    alert( `Произведение = ${calculator.mul()}` );
+  </script>
+
+</body>
+</html>

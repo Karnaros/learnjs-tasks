@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <script>
+
+    function readNumber() {
+        let result;
+
+        do{
+            result = prompt("Введите число:", "");
+        } while( !isFinite(result) )
+
+        return Boolean(result) ? Number(result) : null;
+    }
+
+    alert(`Число: ${readNumber()}`);
+  </script>
+
+</body>
+</html>
